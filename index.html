@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="SportiveBuddy App">
+  <meta name="keywords" content="App,SportiveBuddy,Sport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportiveBuddy</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="assets/css/style.css">
+ <link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top">
+      <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/Logo.png" alt="logo" style="max-width: 150px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto"> <!-- ml-auto ile menü sağa dayalı olacak -->
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+  </div>
+</header>
+<section id="hero" class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 order-md-2 text-center float-right">
+        <img src="assets/img/mobile.png" alt="Uygulama Resmi" class="img-fluid animated">
+      </div>
+      <div class="col-md-8">
+        <div class="section-title text-lg-start" data-aos="fade-up">
+          <h2 class="text-lg-start">Sportive Buddy</h2>
+          <p class="text-dark">Launching Soon</p>
+        </div>
+        <p class="text-left mt-3 txtabout">Turn solo workouts into shared victories.<br>Discover your SportiveBuddy with over<br>60 different sports options..</p>
+        <a href="#" id="downloadButton" class="btn">Notify me</a>
+        <form action="" id="email" style="display: none;" class="mb-2">
+          <div class="form-container mt-4">
+            <input type="email" class="form-control email-input" placeholder="E-posta adresinizi girin">
+            <button type="submit" class="send-btn">SEND</button>
+            <button id="closeButton" class="close-btn">X</button>
+          </div>
+        </form><br>
+        <div class="avialable">
+          <div class="avialable-current mb-4">
+            <div class="avialable-txt text-left">
+              <h4>SportiveBuddy is currently available at:</h4> 
+            </div>
+          </div>
+          <ul class="countryies mt-2 list-inline">
+            <li class="list-inline-item"><img src="assets/img/finland.png" alt="Finland"></li>
+            <li class="list-inline-item"><img src="assets/img/estonia.png" alt="Estonia"></li>
+            <li class="list-inline-item"><img src="assets/img/latvia.png" alt="Latvia"></li>
+            <li class="list-inline-item"><img src="assets/img/lithuania.png" alt="Lithuania"></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- ======= Features Section ======= -->
+    <section id="features" class="features mb-5">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Features</h2>
+          <p>Check The Features</p>
+        </div>
+
+        <div class="row" data-aos="fade-left">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+              <i class="fa-solid fa-wand-magic-sparkles fa-xl mr-2" style="color: #ffbb2c;"></i>
+              <h3><a href="">Lorem Ipsum</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <i class="fa-solid fa-chart-simple fa-xl mr-2" style="color: #5578ff;"></i>
+              <h3><a href="">Dolor Sitema</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+              <i class="fa-regular fa-calendar-days fa-xl mr-2" style="color: #e80368;"></i>
+              <h3><a href="">Sed perspiciatis</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <i class="fa-solid fa-brush fa-xl mr-2" style="color: #e361ff;"></i>
+              <h3><a href="">Magni Dolores</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
+              <i class="fa-solid fa-database fa-xl mr-2" style="color: #47aeff;"></i>
+              <h3><a href="">Nemo Enim</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <i class="fa-solid fa-image fa-xl mr-2" style="color: #ffa76e;"></i>
+              <h3><a href="">Eiusmod Tempor</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
+              <i class="fa-solid fa-list fa-xl mr-2" style="color: #11dbcf;"></i>
+              <h3><a href="">Midela Teren</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class="fa-solid fa-tag fa-xl mr-2" style="color: #4233ff;"></i>
+              <h3><a href="">Pira Neve</a></h3>
+            </div>
+          </div>
+       
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+    <section id="contact" class="contact mb-5 mt-5">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+            <div class="info">
+              <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+               <i class="fa-solid fa-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+            <form action="" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+<footer class="footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <a href="index.html" class="navbar-brand">
+          <img src="assets/img/logo-white.png" alt="logo" style="max-width: 150px;">
+        </a>
+      </div>
+      <div class="col-md-4 text-center d-none d-md-block">
+        <h5>Follow Us</h5>
+        <ul class="social-icons mt-2 list-unstyled">
+          <li><a href="#" target="blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+          <li><a href="#" target="blank"><i class="fa-brands fa-github fa-xl"></i></li>
+          <li><a href="#" target="blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+          <li><a href="#" target="blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <h5>Get the App</h5>
+        <div class="store-btn">
+          <a href="#" target="blank"><img src="assets/img/playstore.png" alt="Play Store"></a>
+          <a href="#" target="blank"><img src="assets/img/appstore.png" alt="App Store"></a>
+        </div>
+      </div>
+      <div class="col-12 text-center d-md-none">
+        <ul class="list-unstyled">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-md-12 text-center">
+        <p>&copy; 2023 Sportive Buddy INC</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

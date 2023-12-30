@@ -1,0 +1,584 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Open+Sans:ital,wght@0,400;1,300&family=Poppins:wght@300;400;500&family=Roboto:wght@300;500&family=Ubuntu:wght@300&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a{
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+    /* Genel stil ayarları */
+    body {
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+     font-family: 'Poppins', sans-serif; 
+     background-image: url('../../assets/img/background.png');
+     background-size: cover;
+     background-position: center;
+    background-attachment: fixed; 
+    color: #333;
+
+
+    }
+
+    /* Header */
+header {
+  color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-brand {
+  /*margin-right: 718px; */
+}
+    header ul {
+      list-style: none;
+      display: flex;
+    }
+
+    header ul li {
+      margin-right: 20px;
+    }
+
+    header ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Hero bölümü */
+    #hero {
+      text-align: center;
+      padding: 100px 0;
+    }
+#hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+    #hero-feature{
+     text-align: center;
+     width: 100%;
+    }
+
+ @media (max-width: 768px) {
+    img.img-fluid {
+      max-width: 50%; /* veya istediğiniz oranı girin */
+      height: auto;
+    }
+  }
+    /* Buton stil */
+    .btn {
+    width: 180px;
+    height: 50px;
+    float: left;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    }
+
+.btn:hover{
+   text-decoration: none;
+   background:#040404;
+   color: #fff;
+
+}
+
+.sendbtn{
+
+}
+    /* Form */
+    .form-container {
+      display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 28px;
+    margin-left: 0;
+    float: left;
+    }
+
+    .email-input {
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    width: 320px;
+    }
+
+    .send-btn {
+      padding: 8px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      width:100px;
+    }
+.send-btn:hover{
+   text-decoration: none;
+   background:#040404;
+   color: #fff;
+
+}
+
+
+@media (max-width: 768px) {
+    /* Mobil cihazlar için özel stil */
+    .form-control {
+      width: 100%;
+      padding: 8px; /* İstenilen padding değeri */
+      font-size: 14px; /* İstenilen font boyutu */
+    }
+    
+    .send-btn, .close-btn {
+      font-size: 14px; /* İstenilen font boyutu */
+      padding: 6px 12px; /* İstenilen padding değeri */
+    }
+  }
+
+
+.close-btn{
+      padding: 8px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      width:80px;
+      margin-left:5px;
+}
+.close-btn:hover{
+ text-decoration: none;
+   background:#040404;
+   color: #fff;
+}
+
+
+.txtabout{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif; 
+}
+
+
+/*Feature*/
+@media (max-width: 575.98px) {
+  #featured-3 .container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #featured-3 .feature {
+    width: 100%;
+  }
+}
+.frd{
+  text-decoration: none;
+  cursor: pointer;
+ 
+}
+.frd:hover{
+  background-color: #f7ffec;
+}
+
+
+
+.featuredr{
+  background-color: #b7f26b;
+}
+
+
+.parag{
+  font-size:13px;
+}
+
+
+ #heros{
+      text-align: center;
+    }
+/*-------------------------------------------------*/
+.avialable {
+
+    font-size:1.5rem;
+}
+
+.avialable-current{
+    position: relative;
+    top: 1rem;
+    margin-right: 1em;
+    font-size: 1.5rem;
+    text-align: left;
+    border-radius: 12px;
+    background-color: #edfffe;
+    width: 100%;
+    box-sizing: border-box;
+    padding:0px 1px 0px 11px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.avialable-txt {
+    font-size: 24px;
+    display: flex;
+    margin-top: 100px;
+/*    margin-bottom: 18px;*/
+}
+
+.countryies {
+  display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 4px 2px;
+    border-radius: 10px;
+    background-color: #e1ffbb;
+    margin-bottom: 20px
+}
+
+
+.countryies li {
+  margin-right: 20px;
+}
+
+
+/*Footer*/
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .footer p {
+      margin-bottom: 0;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footer ul li {
+      margin-bottom: 10px;
+    }
+
+    .social-icons li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+     .footer ul li a {
+      text-decoration: none;
+      color: #E1FFBB;
+     }
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .store-btn img {
+      width: 100px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .fa-brands {
+      color:#E1FFBB !important;
+    }
+
+
+  /*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.section-title {
+  padding-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #1acc8d;
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #baf273;
+}
+
+
+
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #baf273;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #f0f0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #baf273;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #171716;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #1acc8d;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #1acc8d;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #34e5a6;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  /*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+
+.features .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #f5f5ff;
+  transition: ease-in-out 0.3s;
+}
+
+.features .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.features .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.features .icon-box h3 a {
+  color: #04d143;
+  transition: ease-in-out 0.3s;
+  text-decoration: none;
+}
+
+.features .icon-box h3 a:hover {
+  color: #07c341;
+}
+
+.features .icon-box:hover {
+  background: #edffeb;
+}
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  background: #f5f5ff;
+  padding: 70px 0 60px;
+}
+
+.counts .count-box {
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #fff;
+}
+
+.counts .count-box i {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  background: #1acc8d;
+  padding: 12px;
+  color: #fff;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.counts .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #010483;
+}
+
+.counts .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
